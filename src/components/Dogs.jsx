@@ -24,7 +24,7 @@ function Dogs() {
             <h4>{dog.breed}</h4>
 
             <Button
-              variant="outline-warning"
+              variant="success"
               onClick={() => {
                 navigate(`/players/${dog.id}`);
               }}

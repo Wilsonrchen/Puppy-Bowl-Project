@@ -1,0 +1,14 @@
+.singledogcard {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px 0;
+  padding: 15px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: cornsilk;
+}
+
+.background {
+  background: rgb(14, 34, 124);
+}

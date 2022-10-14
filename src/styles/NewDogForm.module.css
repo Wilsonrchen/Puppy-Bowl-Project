@@ -1,0 +1,14 @@
+.dogform {
+  margin: 15px;
+  padding: 30px;
+  background-color: cornsilk;
+}
+
+.inputlabel {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.button {
+  margin: 10px;
+}

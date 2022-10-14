@@ -12,6 +12,7 @@ export default function NewDogForm() {
   return (
     <div>
       <form
+        className={styles.dogform}
         onSubmit={async (e) => {
           e.preventDefault();
           const result = await createPupper(name, breed);
@@ -19,8 +20,9 @@ export default function NewDogForm() {
         }}
       >
         <h3>Create a New Dog</h3>
-        <label>Name:</label>
+        <label className={styles.inputlabel}>Name:</label>
         <input
+          className={styles.inputlabel}
           value={name}
           type="text"
           placeholder="name"
@@ -28,8 +30,9 @@ export default function NewDogForm() {
             setName(e.target.value);
           }}
         />
-        <label>Breed:</label>
+        <label className={styles.inputlabel}>Breed:</label>
         <input
+          className={styles.inputlabel}
           value={breed}
           type="text"
           placeholder="breed"
@@ -38,7 +41,11 @@ export default function NewDogForm() {
           }}
         />
 
-        <Button variant="outline-primary" type="submit">
+        <Button
+          className={styles.button}
+          variant="outline-primary"
+          type="submit"
+        >
           Submit
         </Button>
       </form>
